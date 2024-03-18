@@ -11,7 +11,6 @@ with open(pdf_path, 'rb') as file:
         text_content += page.extractText()
 
 # Set up OpenAI API credentials
-openai.api_key = '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'
 
 # Define the prompt for GPT
 prompt = f"Document: {text_content}\n\nQuestion:"
